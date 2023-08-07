@@ -1,11 +1,9 @@
 import React from "react";
-import {Link} from 'react-router-dom';
-
+import { Link } from "react-router-dom";
 
 function Contact() {
   return (
     <div>
-
       <div className="banner">
         <div id="BannerInner" role="presentation">
           <ul id="Slider1" className="rslides">
@@ -23,7 +21,7 @@ function Contact() {
                     <li>Digital X-Ray</li>
                   </ul>
                   <div className="btn">
-                    <Link to="locations-and-maps-houston-mri.html#Friendswood">
+                    <Link to="locations-and-maps-houston-mri#Friendswood">
                       Read More
                     </Link>
                   </div>
@@ -164,28 +162,28 @@ function Contact() {
               data-skip="Content"
             >
               <div className="breadcrumbs">
-                <a href="index.html">Home</a> &raquo; Contact Us
+                <a href="index">Home</a> &raquo; Contact Us
               </div>
               <h1>Contact Us</h1>
               <ul className="newBox2">
                 <li className="a1">
-                  <a href="appointment-houston-mri.html">Appointments</a>
+                  <a href="appointment-houston-mri">Appointments</a>
                   <p>
-                    <a href="appointment-houston-mri.html">Click Here</a>
+                    <a href="appointment-houston-mri">Click Here</a>
                   </p>
                 </li>
                 <li className="a17">
-                  <a href="locations-and-maps-houston-mri.html">Locations</a>
+                  <a href="locations-and-maps-houston-mri">Locations</a>
                   <p>
-                    <a href="locations-and-maps-houston-mri.html">Click Here</a>
+                    <a href="locations-and-maps-houston-mri">Click Here</a>
                   </p>
                 </li>
                 <li className="a14">
-                  <a href="join-our-team-houston-mri.html">
+                  <a href="join-our-team-houston-mri">
                     Employment Opportunities
                   </a>
                   <p>
-                    <a href="join-our-team-houston-mri.html">
+                    <a href="join-our-team-houston-mri">
                       Click Here to Join Our Team !
                     </a>
                   </p>
@@ -225,34 +223,34 @@ function Contact() {
             <aside id="sidebar" data-skip="Sidebar">
               <div className="whatWeDo">
                 <div className="head">
-                  <a href="diagnostic-imaging-services-mri-center-katy.html">
+                  <a href="diagnostic-imaging-services-mri-center-katy">
                     What We Do
                   </a>
                 </div>
                 <ul>
                   <li className="mri">
-                    <a href="mri-magnetic-resonance-imaging-center.html">MRI</a>
+                    <a href="mri-magnetic-resonance-imaging-center">MRI</a>
                   </li>
                   <li className="mra">
-                    <a href="mra-magnetic-resonance-angiography.html">MRA </a>
+                    <a href="mra-magnetic-resonance-angiography">MRA </a>
                   </li>
                   <li className="ct">
-                    <a href="computed-tomography-houston-mri.html">
+                    <a href="computed-tomography-houston-mri">
                       Computed Tomography
                     </a>
                   </li>
                   <li className="ult">
-                    <a href="diagnostic-ultrasound-sonography-houston.html">
+                    <a href="diagnostic-ultrasound-sonography-houston">
                       Ultrasound
                     </a>
                   </li>
                   <li className="bmd">
-                    <a href="dexa-bone-density-osteoporosis-treatment.html">
+                    <a href="dexa-bone-density-osteoporosis-treatment">
                       Bone Mass Density
                     </a>
                   </li>
                   <li className="dxcr">
-                    <a href="digital-x-ray-center-diagnostic-radiology.html">
+                    <a href="digital-x-ray-center-diagnostic-radiology">
                       Digital X-Ray
                     </a>
                   </li>
@@ -262,7 +260,6 @@ function Contact() {
           </section>
         </div>
       </main>
-
     </div>
   );
 }

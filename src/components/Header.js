@@ -26,7 +26,7 @@ function Header() {
           </div>
           <div className="header_lists">
             <div className="book" id="myBtn">
-              <Link to="javascript:void(0)">Appointments</Link>
+              <Link to="appointment">Appointments</Link>
             </div>
             <div className="hloc">
               <Link to="locations-and-maps-houston-mri" className="main">
@@ -213,7 +213,7 @@ function Header() {
                 </Link>
                 <ul>
                   <li>
-                    <Link to="appointment-houston-mri">Appointments</Link>
+                    <Link to="appointment">Appointments</Link>
                   </li>
                   <li>
                     <Link to="locations-and-maps-houston-mri">Locations</Link>

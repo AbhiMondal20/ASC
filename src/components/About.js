@@ -1,12 +1,9 @@
 import React from "react";
-import Header from "./Header";
-import Footer from "./Footer";
 
 function About() {
   return (
     <>
       <div>
-        <Header />
         <div class="banner">
           <div id="BannerInner" role="presentation">
             <ul id="Slider1" class="rslides">
@@ -250,7 +247,7 @@ function About() {
             </section>
           </div>
         </main>
-        <Footer />
+
       </div>
     </>
   );

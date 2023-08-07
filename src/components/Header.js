@@ -149,7 +149,7 @@ function Header() {
                   </li>
                   <li>
                     <Link
-                      to="pdf/order-form-houston-mri-2023.pdf"
+                      to="pdf/order-form-houston-mri-2023"
                       target="_blank"
                     >
                       Order Form

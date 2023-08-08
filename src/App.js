@@ -7,7 +7,11 @@ import About from './components/About';
 import Contact from './components/Contact';
 import { Route, Routes } from 'react-router-dom';
 import Appointment from './components/Appointment';
+import Slider from './components/Slider';
 
+// #003515 text color
+// Background color #F8FDFF
+// Hover color #caebf3
 
 function App() {
   return (

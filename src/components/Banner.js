@@ -1,4 +1,6 @@
 import React from "react";
+import Slider from "./Slider";
+import { Link } from "react-router-dom";
 
 function Banner() {
   return (
@@ -10,7 +12,7 @@ function Banner() {
               <div className="gridWrapper">
                 <div className="theme-L"></div>
                 <div className="theme-R"></div>
-                <div className="bannerContent banner5-Content">
+                {/* <div className="bannerContent banner5-Content">
                   <div className="bannerHead">New Location in Friendswood</div>
                   <ul>
                     <li>High-Field 1.5 Tesla MRI</li>
@@ -28,7 +30,7 @@ function Banner() {
                     <img src="images/phone-icon.png" alt="Phone" />
                     (713)425-8100
                   </div>
-                </div>
+                </div> */}
               </div>
             </li>
             <li className="banner8">
@@ -36,7 +38,7 @@ function Banner() {
                 <div className="theme-L"></div>
                 <div className="theme-R"></div>
                 <div className="bannerContent banner8-Content">
-                  <div className="bannerHead">
+                  {/* <div className="bannerHead">
                     SCHOOL SUPPLY DRIVE
                     <p>
                       for the Women’s & Family Development Center at Star of
@@ -62,7 +64,7 @@ function Banner() {
                         <p>one life, one family at a time.</p>
                       </li>
                     </ul>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </li>
@@ -70,7 +72,7 @@ function Banner() {
               <div className="gridWrapper">
                 <div className="theme-L"></div>
                 <div className="theme-R"></div>
-                <div className="bannerContent">
+                {/* <div className="bannerContent">
                   <div className="bannerHead">
                     PROVIDING <br />
                     exceptional care
@@ -82,7 +84,7 @@ function Banner() {
                       TO OUR COMMUNITY
                     </span>
                   </div>
-                </div>
+                </div> */}
               </div>
             </li>
             <li className="banner3">
@@ -168,7 +170,6 @@ function Banner() {
             </div>
           </div>
         </div>
-
         <div id="wat-we-do-sec" data-skip="What We Do">
           <div className="gridWrapper">
             <div id="watWeDo">
@@ -223,43 +224,55 @@ function Banner() {
             </div>
           </div>
         </div>
-
+        <div className="blogCol1">
+          <h2>
+            <Link to="about">About</Link>
+          </h2>
+        </div>
         <div
           className="section"
           id="allservices"
           data-skip="Provider and Patient Portal"
         >
           <div id="phyRprtsnApntmnts">
-            <div className="gridWrapper">
-              <div className="boxP">
-                <h2>
-                  <a href="provider-portal">Provider Portal</a>
-                </h2>
-                <p>
-                  Access reports and images in <br />
-                  seconds from our secure portal.
-                </p>
-                <a href="provider-portal" className="rmo">
-                  More
-                </a>
-              </div>
+            <div className="gridWrapper bg-color">
               <div className="boxP boxM">
-                <h2>
-                  <a href="patient-portal">Patient Portal</a>
-                </h2>
+                <iframe
+                  width="460"
+                  height="315"
+                  src="https://www.youtube.com/embed/ezihEkrQYss"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+
+              <div className="boxP">
                 <p>
-                  Access your reports and images <br />
-                  online!
+                  Our Journey started in 2003 with 25 beds and built up area of
+                  45000sqft with around 10 departments.We have now 150 licensed
+                  beds and capacity of 180 beds with built up area of 1 Lakh
+                  sqft with around 25 departments. Around 50% area is under
+                  centralized air conditioning.
                 </p>
-                <a href="patient-portal" className="rmo">
-                  More
-                </a>
+                <p>
+                  We have largest haemodialysis unit in this region with 38
+                  state of art machine and double RO plant.Our Nephrology
+                  department is also performing CAPD. Our Newly developed
+                  cardiac centre is performing primary angioplasty,CABG,and
+                  other cardiovascular surgeries.
+                </p>
+                <center>
+                  <Link to="provider-portal" className="rmo">
+                    Read More
+                  </Link>
+                </center>
               </div>
             </div>
           </div>
         </div>
         <div className="clear"></div>
-
         <div className="blog-section"></div>
         <div
           className="gridWrapper"
@@ -332,11 +345,11 @@ function Banner() {
                       incorporating self-care practices improves stress
                       management, decreases mental health issues, ...
                     </p>
-                    <p className="read-more">
-                      <a href="blog/the-importance-of-wellness-screenings-37120">
-                        Read more
-                      </a>
-                    </p>
+                    <center>
+                      <p className="">
+                        <Link to="about">Read more</Link>
+                      </p>
+                    </center>
                   </div>
                 </li>
               </ul>
@@ -375,7 +388,7 @@ function Banner() {
                   href="javascript:void(0)"
                   className="slvj-link-lightbox 1"
                   data-videoid="KwsvDQhOpeU"
-                  data-videosite="youtube"
+                  data-videosite="https://www.youtube.com/watch?v=9sRsK35NSmw"
                 >
                   <img
                     src="images/medical-ultrasound-img-new.jpg"
@@ -393,216 +406,30 @@ function Banner() {
             </ul>
           </div>
           <div className="video-button">
-            <a href="videos-houston-mri">View all Videos</a>
+            <Link to="videos-houston-mri">View all Videos</Link>
           </div>
+
           <div className="clear"></div>
         </div>
       </section>
 
-      <a href="locations-and-maps-houston-mri.html" className="img">
-        <img src="images/review-on-google.jpg" alt="review On Google" />
-      </a>
+      <div id="watWeDo">
+        <h2>
+          <Link to="gallery">Gallery</Link>
+        </h2>
+      </div>
+
+      <Slider />
+      <br />
       <div className="clear"></div>
 
-      <div className="map">
-        <div className="gridWrapper">
-          <div className="theme-L"></div>
-          <div className="theme-R"></div>
-
-          <div className="address_parent">
-            <div className="addr address_block">
-              <div id="boxlink0" className="boxlink">
-                <div className="addrBox">
-                  <a
-                    href="locations-and-maps-houston-mri.html#westhouston"
-                    className="head"
-                  >
-                    WEST HOUSTON
-                  </a>
-                  <p className="a1">
-                    2600 Gessner Road, Suite 150 <br />
-                    Houston, TX 77080
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="addr2 address_block">
-              <div id="boxlink1" className="boxlink">
-                <div className="addrBox">
-                  <a
-                    href="locations-and-maps-houston-mri.html#woodlands"
-                    className="head"
-                  >
-                    WOODLANDS
-                  </a>
-                  <p className="a1">
-                    1733 Woodstead Ct. Suite 100 <br />
-                    The Woodlands, TX 77380
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="addr3 address_block">
-              <div id="boxlink2" className="boxlink">
-                <div className="addrBox">
-                  <a
-                    href="locations-and-maps-houston-mri.html#easthouston"
-                    className="head"
-                  >
-                    EAST HOUSTON
-                  </a>
-                  <p className="a1">
-                    5630 East Sam Houston, Pkwy. N. <br />
-                    Houston, TX 77015
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="addr4 address_block">
-              <div id="boxlink3" className="boxlink">
-                <div className="addrBox">
-                  <a
-                    href="locations-and-maps-houston-mri.html#katy"
-                    className="head"
-                  >
-                    KATY
-                  </a>
-                  <p className="a1">
-                    1336 Pin Oak Road <br />
-                    Katy, TX 77494
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="addr5 address_block">
-              <div id="boxlink4" className="boxlink">
-                <div className="addrBox">
-                  <a
-                    href="locations-and-maps-houston-mri.html#sugarland"
-                    className="head"
-                  >
-                    SUGAR LAND
-                  </a>
-                  <p className="a1">
-                    15555 Creek Bend Dr. Suite 300 <br />
-                    Sugar Land, TX, 77478
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="addr6 address_block">
-              <div id="boxlink5" className="boxlink">
-                <div className="addrBox">
-                  <a
-                    href="locations-and-maps-houston-mri.html#Cypress"
-                    className="head"
-                  >
-                    CYPRESS
-                  </a>
-                  <p className="a1">
-                    27126 Northwest Fwy., Ste. 200
-                    <br />
-                    Cypress, TX 77433
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="addr7 address_block">
-              <div id="boxlink6" className="boxlink">
-                <div className="addrBox">
-                  <a
-                    href="locations-and-maps-houston-mri.html#Friendswood"
-                    className="head"
-                  >
-                    Friendswood <span className="color">(NOW OPEN)</span>
-                  </a>
-                  <p className="a1">
-                    1505 E. Winding Way, Ste. 110
-                    <br />
-                    Friendswood, TX 77546
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="contactRight">
-            <ul>
-              <li id="link0">
-                <a href="locations-and-maps-houston-mri.html#westhouston">
-                  WEST HOUSTON
-                </a>
-              </li>
-              <li id="link1">
-                <a href="locations-and-maps-houston-mri.html#woodlands">
-                  WOODLANDS
-                </a>
-              </li>
-              <li id="link2">
-                <a href="locations-and-maps-houston-mri.html#easthouston">
-                  EAST HOUSTON
-                </a>
-              </li>
-              <li id="link3">
-                <a href="locations-and-maps-houston-mri.html#katy">KATY</a>
-              </li>
-              <li id="link4">
-                <a href="locations-and-maps-houston-mri.html#sugarland">
-                  Sugar Land
-                </a>
-              </li>
-              <li id="link5">
-                <a href="locations-and-maps-houston-mri.html#Cypress">
-                  Cypress
-                </a>
-              </li>
-              <li id="link6">
-                <a href="locations-and-maps-houston-mri.html#Friendswood">
-                  Friendswood <span className="color">(NOW OPEN)</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="hiddenList">
-            <ul>
-              <li id="link01">
-                <a href="locations-and-maps-houston-mri.html#westhouston">
-                  WEST HOUSTON
-                </a>
-              </li>
-              <li id="link11">
-                <a href="locations-and-maps-houston-mri.html#woodlands">
-                  WOODLANDS
-                </a>
-              </li>
-              <li id="link21">
-                <a href="locations-and-maps-houston-mri.html#easthouston">
-                  EAST HOUSTON
-                </a>
-              </li>
-              <li id="link31">
-                <a href="locations-and-maps-houston-mri.html#katy">KATY</a>
-              </li>
-              <li id="link41">
-                <a href="locations-and-maps-houston-mri.html#sugarland">
-                  Sugar Land
-                </a>
-              </li>
-              <li id="link51">
-                <a href="locations-and-maps-houston-mri.html#Cypress">
-                  Cypress
-                </a>
-              </li>
-              <li id="link61">
-                <a href="locations-and-maps-houston-mri.html#Friendswood">
-                  Friendswood
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3563.7213173522696!2d88.4157195643614!3d26.721348624736343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e4413ef9fb4fb9%3A0xb09423bfb96df427!2sAnandaloke%20Sonoscan!5e0!3m2!1sen!2sin!4v1632988877631!5m2!1sen!2sin"
+        width="100%"
+        height="450"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
     </div>
   );
 }

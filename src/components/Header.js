@@ -11,11 +11,12 @@ function Header() {
         <div className="logoWrap">
           <div className="logo">
             <Link to="/">
-              <img
-                src="/images/houston-mri-and-diagnostic-imaging-logo.png"
+              {/* <img
+                src="/images/Anandalok_Logo new.png"
                 alt="Houston MRI and Diagnostic Imaging"
-              />
+              /> */}
             </Link>
+              {/* <p>Anandaloke Sonoscan Centre</p> */}
           </div>
         </div>
         <div className="rightInfo">
@@ -27,44 +28,6 @@ function Header() {
           <div className="header_lists">
             <div className="book" id="myBtn">
               <Link to="appointment">Appointments</Link>
-            </div>
-            <div className="hloc">
-              <Link to="locations-and-maps-houston-mri" className="main">
-                Our Locations
-              </Link>
-            </div>
-            <div className="lang hlang">
-              Language
-              <ul className="list-unstyled ct-language__dropdown header-language">
-                <li className="eng">
-                  <Link
-                    onclick="doGoogleLanguageTranslator('en|en'); return false;"
-                    data-lang="en"
-                  >
-                    <img src="images/us.png" alt="USA" />
-                    <span className="notranslate">English</span>
-                  </Link>
-                </li>
-                <li className="es">
-                  <Link
-                    onclick="doGoogleLanguageTranslator('en|es'); return false;"
-                    data-lang="es"
-                  >
-                    <img src="images/es.png" alt="Spain" />
-                    <span className="notranslate">Spanish</span>
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div className="book b2">
-              <Link to="https://doctorportal.houstonmri.com/" target="_blank">
-                Provider Login
-              </Link>
-            </div>
-            <div className="book b3">
-              <Link to="https://patientportal.houstonmri.com/" target="_blank">
-                Patient Login
-              </Link>
             </div>
             <div className="careers">
               <Link to="join-our-team-houston-mri">Careers</Link>

@@ -21,7 +21,7 @@ const service = "Service";
 const provider = "Providers";
 const patients = "Patients";
 const career = "Careers";
-const contact = "CONTACT US";
+const contact = "Contact Us";
 
   return (
     <div>
@@ -32,7 +32,7 @@ const contact = "CONTACT US";
         <Route path='contact' element={ <Contact /> } />
         <Route path='appointment' element={ <Appointment /> } />
       </Routes>
-      <Footer/>
+      <Footer home={home} about={about} appointment={appointment} service={service} provider={provider} patients= {patients} contact={contact} career={career} />
     </div>
   );
 }

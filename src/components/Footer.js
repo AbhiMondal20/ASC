@@ -1,6 +1,9 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 
-function Footer() {
+function Footer(props) {
+  const {home, about, appointment, service, provider, patients, contact, career} = props;
+
   return (
     <div>
       <footer>
@@ -25,16 +28,16 @@ function Footer() {
             </div>
             <div className="copyrights">
               <p className="links">
-                <a href="index">Home</a> |
-                <a href="disclaimer">Disclaimer</a> |
-                <a href="privacy">Privacy</a> |
-                <a href="sitemap-houston-mri">Sitemap</a> |
-                <a href="feedback">Feedback</a> |
-                <a href="tell-a-friend">Tell a Friend</a> |
-                <a href="contact-us-houston-mri">Contact Us</a> |
-                <a href="accessibility-statement">
+                <Link to="/">{home}</Link> |
+                <Link to="disclaimer">Disclaimer</Link> |
+                <Link to="privacy">Privacy</Link> |
+                <Link to="sitemap-houston-mri">Sitemap</Link> |
+                <Link to="feedback">Feedback</Link> |
+                <Link to="tell-a-friend">Tell a Friend</Link> |
+                <Link to="contact">{contact}</Link> |
+                <Link to="accessibility-statement">
                   Accessibility Statement
-                </a>
+                </Link>
               </p>
               <p className="copy">
                 <a href="https://goo.gl/maps/yTsjmJZqpZ6UMRgXA" target="_blank">

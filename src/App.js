@@ -14,11 +14,20 @@ import Slider from './components/Slider';
 // Hover color #caebf3
 
 function App() {
+const home = "Home";
+const about = "About";
+const appointment = "Appointment";
+const service = "Service";
+const provider = "Providers";
+const patients = "Patients";
+const career = "Careers";
+const contact = "CONTACT US";
+
   return (
     <div>
-      <Header/>
+      <Header home={home} about={about} appointment={appointment} service={service} provider={provider} patients= {patients} contact={contact} career={career}/>
       <Routes>
-        <Route path='/' element={ <Index />} />
+        <Route path='/' element={ <Index  />} />
         <Route path='about' element={ <About /> } />
         <Route path='contact' element={ <Contact /> } />
         <Route path='appointment' element={ <Appointment /> } />

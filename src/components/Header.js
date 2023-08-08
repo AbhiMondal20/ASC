@@ -4,7 +4,9 @@ const style = {
   clear: "both",
 };
 
-function Header() {
+function Header(props) {
+const {home, about, appointment, service, provider, patients, contact, career} = props;
+
   return (
     <header id="header" data-skip="Header">
       <div className="gridWrapper">
@@ -27,10 +29,10 @@ function Header() {
           </div>
           <div className="header_lists">
             <div className="book" id="myBtn">
-              <Link to="appointment">Appointments</Link>
+              <Link to="appointment">{appointment}</Link>
             </div>
             <div className="careers">
-              <Link to="join-our-team-houston-mri">Careers</Link>
+              <Link to="join-our-team-houston-mri">{career}</Link>
             </div>
           </div>
         </div>
@@ -60,13 +62,13 @@ function Header() {
               <li>
                 <Link to="/" accesskey="h">
                   {" "}
-                  Home{" "}
+                  {home}{" "}
                 </Link>
               </li>
               <li>
                 <Link to="about" accesskey="a">
                   {" "}
-                  About Us{" "}
+                  {about}{" "}
                 </Link>
               </li>
               <li>
@@ -74,7 +76,7 @@ function Header() {
                   to="diagnostic-imaging-services-mri-center-katy"
                   accesskey="s"
                 >
-                  Services
+                  {service}
                 </Link>
                 <ul>
                   <li>
@@ -103,7 +105,7 @@ function Header() {
               </li>
               <li>
                 <Link to="for-physicians-houston-mri" accesskey="p">
-                  Providers
+                  {provider}
                 </Link>
                 <ul>
                   <li>
@@ -129,7 +131,7 @@ function Header() {
               </li>
               <li>
                 <Link to="patients-houston-mri" accesskey="i">
-                  Patients
+                  {patients}
                 </Link>
                 <ul>
                   <li>
@@ -172,11 +174,11 @@ function Header() {
 
               <li>
                 <Link to="contact" accesskey="c">
-                  Contact Us
+                  {contact}
                 </Link>
                 <ul>
                   <li>
-                    <Link to="appointment">Appointments</Link>
+                    <Link to="appointment">{appointment}</Link>
                   </li>
                   <li>
                     <Link to="locations-and-maps-houston-mri">Locations</Link>

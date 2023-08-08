@@ -8003,3 +8003,7 @@ form ul#form-element-list li ul li span {
 .dfw-greymode #Main-Menu ul {
     background: #ccc !important;
 }
+
+video{
+    border-radius:5%;
+}

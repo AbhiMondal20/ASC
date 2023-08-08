@@ -237,15 +237,20 @@ function Banner() {
           <div id="phyRprtsnApntmnts">
             <div className="gridWrapper bg-color">
               <div className="boxP boxM">
-                <iframe
-                  width="460"
-                  height="315"
-                  src="https://www.youtube.com/embed/ezihEkrQYss"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
+                <video
+                  width="100%"
+                  height="100%"
+                  controls
+                  muted
+                  poster="images/c1.jpeg"
+                  controlslist="nodownload nofullscreen noremoteplayback"
+                  className="img-cover"
+                  loading="lazy"
+                  data-w-id="d3b4dac9-2f11-93a1-61eb-05fff6e814fa"
+                  alt=""
+                >
+                  <source src="images/video.mp4" type="video/mp4" />
+                </video>
               </div>
 
               <div className="boxP">
@@ -346,7 +351,7 @@ function Banner() {
                       management, decreases mental health issues, ...
                     </p>
                     <center>
-                      <p className="">
+                      <p className="rmo">
                         <Link to="about">Read more</Link>
                       </p>
                     </center>
@@ -355,7 +360,7 @@ function Banner() {
               </ul>
             </div>
           </div>
-          <div className="blogCol2">
+          {/* <div className="blogCol2">
             <h2>
               <a href="videos-houston-mri">Videos</a>
             </h2>
@@ -404,7 +409,7 @@ function Banner() {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
           <div className="video-button">
             <Link to="videos-houston-mri">View all Videos</Link>
           </div>

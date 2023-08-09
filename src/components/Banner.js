@@ -72,7 +72,7 @@ function Banner() {
               <div className="gridWrapper">
                 <div className="theme-L"></div>
                 <div className="theme-R"></div>
-                {/* <div className="bannerContent">
+                <div className="bannerContent">
                   <div className="bannerHead">
                     PROVIDING <br />
                     exceptional care
@@ -84,7 +84,7 @@ function Banner() {
                       TO OUR COMMUNITY
                     </span>
                   </div>
-                </div> */}
+                </div>
               </div>
             </li>
             <li className="banner3">
@@ -410,9 +410,9 @@ function Banner() {
               </li>
             </ul>
           </div> */}
-          <div className="video-button">
+          {/* <div className="video-button">
             <Link to="videos-houston-mri">View all Videos</Link>
-          </div>
+          </div> */}
 
           <div className="clear"></div>
         </div>

@@ -254,19 +254,9 @@ function Banner() {
               </div>
 
               <div className="boxP">
+                  <h1 id="25_years">Marking a Milestone: 25 Years of Remarkable Excellence</h1>
                 <p>
-                  Our Journey started in 2003 with 25 beds and built up area of
-                  45000sqft with around 10 departments.We have now 150 licensed
-                  beds and capacity of 180 beds with built up area of 1 Lakh
-                  sqft with around 25 departments. Around 50% area is under
-                  centralized air conditioning.
-                </p>
-                <p>
-                  We have largest haemodialysis unit in this region with 38
-                  state of art machine and double RO plant.Our Nephrology
-                  department is also performing CAPD. Our Newly developed
-                  cardiac centre is performing primary angioplasty,CABG,and
-                  other cardiovascular surgeries.
+                In 1985, Dr. Susanta Kumar Roy's vision gave birth to Anandaloke Sonoscan Center. A torchbearer of progress, it evolved into Anandaloke Hospital and Neurosciences Center in 2003, now a leading 100-bed Anandaloke Multispeciality Hospital. Dr. Arindam Pramanik's leadership expanded its reach, addressing diagnostic needs for North Bengal, Bhutan, Sikkim, and Nepal. The Anandaloke Eye Care Center, established in 2010, added to its legacy. This institution's 25-year journey symbolizes compassion, innovation, and regional healthcare collaboration, impacting countless lives in the region and beyond.
                 </p>
                 <center>
                   <Link to="provider-portal" className="rmo">

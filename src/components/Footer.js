@@ -3,7 +3,6 @@ import {Link} from 'react-router-dom';
 
 function Footer(props) {
   const {home, about, appointment, service, provider, patients, contact, career} = props;
-
   return (
     <div>
       <footer>

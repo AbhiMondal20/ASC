@@ -158,7 +158,6 @@ function Banner() {
           </div>
         </div>
       </div>
-
       <section>
         <div id="cost" data-skip="Find Out Why">
           <div className="gridWrapper">
@@ -254,9 +253,21 @@ function Banner() {
               </div>
 
               <div className="boxP">
-                  <h1 id="25_years">Marking a Milestone: 25 Years of Remarkable Excellence</h1>
+                <h1 id="25_years">
+                  Marking a Milestone: 25 Years of Remarkable Excellence
+                </h1>
                 <p>
-                In 1985, Dr. Susanta Kumar Roy's vision gave birth to Anandaloke Sonoscan Center. A torchbearer of progress, it evolved into Anandaloke Hospital and Neurosciences Center in 2003, now a leading 100-bed Anandaloke Multispeciality Hospital. Dr. Arindam Pramanik's leadership expanded its reach, addressing diagnostic needs for North Bengal, Bhutan, Sikkim, and Nepal. The Anandaloke Eye Care Center, established in 2010, added to its legacy. This institution's 25-year journey symbolizes compassion, innovation, and regional healthcare collaboration, impacting countless lives in the region and beyond.
+                  In 1985, Dr. Susanta Kumar Roy's vision gave birth to
+                  Anandaloke Sonoscan Center. A torchbearer of progress, it
+                  evolved into Anandaloke Hospital and Neurosciences Center in
+                  2003, now a leading 100-bed Anandaloke Multispeciality
+                  Hospital. Dr. Arindam Pramanik's leadership expanded its
+                  reach, addressing diagnostic needs for North Bengal, Bhutan,
+                  Sikkim, and Nepal. The Anandaloke Eye Care Center, established
+                  in 2010, added to its legacy. This institution's 25-year
+                  journey symbolizes compassion, innovation, and regional
+                  healthcare collaboration, impacting countless lives in the
+                  region and beyond.
                 </p>
                 <center>
                   <Link to="provider-portal" className="rmo">
